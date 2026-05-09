@@ -1,0 +1,4 @@
+app/
+dist/
+.uv2setup/*.exe
+.uv2setup/*.ico
