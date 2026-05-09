@@ -1,6 +1,11 @@
 # uv2setup
 
-Make your uv project into a setup package for Windows easily.
+Convert uv project into a setup package for Windows easily with max compatibility.
+
+The most common way to make setup package for Python is pyinstaller, however, some Python packages, especially in AI and datascience domain, pyinstaller have limited compatibility. Thus, we provide a method, using `uv sync` to install Python environment during setup and `uv run` to start Python codes to keep compatibility.
+
+> [!NOTE]
+> This project is a **Proof of Concept** / **Experimental** implementation exploring Python application packaging and installation workflows. It is intended for technical demonstration and learning purposes only, and is not production-ready or actively maintained.
 
 ## Usage
 
@@ -19,6 +24,10 @@ python fetch-resource.py
 5. Edit some `#define` in `uv2setup.iss`
 6. Run `Build -> Compile` in menu. Your setup file will be in `dist/` folder
 
+## Extras
+1. Internet access is required for users during the installation
+2. Replace '.uv2setup/icon.ico' to change icons.
+3. Edit '.uv2setup/uv.toml' to set mirrors, change timeout and edit other behaviors of uv.
 
 ## License
 
