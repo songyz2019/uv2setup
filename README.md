@@ -2,7 +2,7 @@
 
 Convert uv project into a setup package for Windows easily with max compatibility.
 
-The most common way to make setup package for Python is pyinstaller, however, some Python packages, especially in AI and datascience domain, pyinstaller have limited compatibility. Thus, we provide a method, using `uv sync` to install Python environment during setup and `uv run` to start Python codes to keep compatibility.
+The most common way to make setup package for Python is pyinstaller, however, some Python packages, especially in AI and datascience domain, pyinstaller have limited compatibility. Thus, we provide a method, using `uv sync` to install Python environment during setup and `uv run` to start Python codes to keep compatibility. If it can run with `uv run main.py`, it can run after the setup, no import fix needed.
 
 > [!NOTE]
 > This project is a **Proof of Concept** / **Experimental** implementation exploring Python application packaging and installation workflows. It is intended for technical demonstration and learning purposes only, and is not production-ready or actively maintained.
